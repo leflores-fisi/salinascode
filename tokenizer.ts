@@ -5,10 +5,6 @@ function isNumber(token: string) {
     return (token >= '0' && token <= '9');
 }
 
-function isValidVariableName(name: string) {
-    return /^\p{L}|_/gu.test(name);
-}
-
 function isAlpha(token: string) {
     return /\p{L}|_/u.test(token); // unicode set
 }
